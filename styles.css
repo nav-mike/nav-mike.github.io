@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&display=swap");
+
+:root {
+  --background-nav: #d64b20;
+  --background-welcome: #323842;
+  --background-content: #4c638a;
+  --color-nav: white;
+  --color-nav-hover: #42170a;
+}
+
+body {
+  font-family: "Kiwi Maru", serif;
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 1.3rem 0;
+  width: 100%;
+  background-color: var(--background-nav);
+  top: 0;
+}
+
+#navbar>ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar>ul>li {
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--color-nav);
+  font-weight: bolder;
+  font-size: 1.5rem;
+  margin: 20px;
+  padding: 10px 10px 15px;
+}
+
+.nav-link:hover {
+  color: var(--color-nav-hover);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 90px 50px 0px;
+  background-color: var(--background-content);
+  color: white;
+}
+
+#welcome-section {
+  color: white;
+  padding: 90px 50px 0px;
+  height: calc(100vh - 90px);
+  text-align: center;
+  background-color: var(--background-welcome);
+}
+
+#welcome-section>h1 {
+  font-size: xxx-large;
+  padding-top: calc(50vh - 90px);
+}
+
+#welcome-section>h1>small {
+  font-size: x-large;
+}
+
+.project-image {
+  height: auto;
+  width: 30rem;
+}
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 50px 0;
+  background-color: var(--background-content);
+  color: var(--color-nav);
+}
+
+.titles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  grid-template-areas:
+    "p1 p2"
+    "p3 p4";
+}
+
+#p1 {
+  grid-area: p1;
+}
+
+#p2 {
+  grid-area: p2;
+}
+
+#p3 {
+  grid-area: p3;
+}
+
+#p4 {
+  grid-area: p4;
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile>a {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: inherit;
+  text-shadow: 2px 2px black;
+}
+
+.contacts {
+  background-color: var(--background-welcome);
+  color: var(--color-nav);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+  justify-items: center;
+  padding: 20px 0;
+}
+
+.contacts a {
+  color: inherit;
+}
+
+@media (max-width: 400px) {
+  #navbar {
+    padding: 0;
+    padding: 8px 0;
+    justify-content: flex-start;
+  }
+
+  .nav-link {
+    font-size: inherit;
+  }
+
+  #welcome-section {
+    height: inherit;
+    padding: 50px 50px 30px;
+    ;
+  }
+
+  #welcome-section>h1 {
+    font-size: inherit;
+    padding-top: 0;
+  }
+
+  #welcome-section>h1>small {
+    font-size: inherit;
+  }
+
+  .titles {
+    display: flex;
+    flex-flow: column;
+  }
+
+  h2 {
+    font-size: inherit;
+    text-align: center;
+  }
+
+  p {
+    font-size: inherit;
+  }
+
+  .project-image {
+    width: 20rem;
+  }
+
+  .contacts {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+  }
+}
