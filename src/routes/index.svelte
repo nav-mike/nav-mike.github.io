@@ -1,5 +1,6 @@
 <script>
 	import Card from '../components/Card.svelte';
+	import Skill from '../components/Skill.svelte';
 </script>
 
 <div class="flex flex-row">
@@ -24,31 +25,73 @@
 		</ul>
 	</div>
 	<div>
-		details info:
 		<!-- Tabs: -->
 		<div>
 			My professional skills:
 			<ul>
-				<li>Ruby</li>
-				<li>Ruby on Rails</li>
-				<li>PostgreSQL</li>
-				<li>GraphQL</li>
-				<li>RSpec</li>
-				<li>JavaScript</li>
-				<li>Firestore</li>
-				<li>TypeScript</li>
-				<li>React.js</li>
-				<li>React Native</li>
-				<li>Nodejs</li>
-				<li>NestJS</li>
-				<li>Tailwind</li>
-				<li>Svelte</li>
-				<li>Elixir</li>
-				<li>Phoenix</li>
-				<li>Git</li>
-				<li>Docker</li>
-				<li>Redis</li>
-				<li>Go</li>
+				<li>
+					<Skill icon="devicon-ruby-plain" name="Ruby" />
+				</li>
+				<li>
+					<Skill icon="devicon-rails-plain" name="Ruby on Rails" />
+				</li>
+				<li>
+					<Skill icon="devicon-postgresql-plain" name="PostgreSQL" />
+				</li>
+				<li>
+					<Skill icon="devicon-graphql-plain" name="GraphQL" />
+				</li>
+				<li>
+					<Skill icon="devicon-rspec-original" name="RSpec" />
+				</li>
+				<li>
+					<Skill icon="devicon-javascript-plain" name="JavaScript" />
+				</li>
+				<li>
+					<Skill icon="devicon-firebase-plain" name="Firebase" />
+				</li>
+				<li>
+					<Skill icon="devicon-typescript-plain" name="TypeScript" />
+				</li>
+				<li>
+					<Skill icon="devicon-react-original" name="React.js" />
+				</li>
+				<li>
+					<Skill icon="devicon-react-original" name="React Native" />
+				</li>
+				<li>
+					<Skill icon="devicon-nodejs-plain" name="Node.js" />
+				</li>
+				<li>
+					<Skill icon="devicon-nestjs-plain" name="Nestjs" />
+				</li>
+				<li>
+					<Skill icon="devicon-tailwindcss-plain" name="Tailwind CSS" />
+				</li>
+				<li>
+					<Skill icon="devicon-svelte-plain" name="Svelte" />
+				</li>
+				<li>
+					<Skill icon="devicon-elixir-plain" name="Elixir" />
+				</li>
+				<li>
+					<Skill icon="devicon-phoenix-plain" name="Phoenix" />
+				</li>
+				<li>
+					<Skill icon="devicon-git-plain" name="Git" />
+				</li>
+				<li>
+					<Skill icon="devicon-github-original" name="GitHub" />
+				</li>
+				<li>
+					<Skill icon="devicon-docker-plain" name="Docker" />
+				</li>
+				<li>
+					<Skill icon="devicon-redis-plain" name="Redis" />
+				</li>
+				<li>
+					<Skill icon="devicon-go-plain" name="Go" />
+				</li>
 			</ul>
 		</div>
 		<div>
