@@ -1,6 +1,7 @@
 <script>
 	import Card from '../components/Card.svelte';
 	import Skill from '../components/Skill.svelte';
+	import BaseLink from '../components/BaseLink.svelte';
 </script>
 
 <div class="flex flex-row">
@@ -16,12 +17,43 @@
 		<p>Languages: Rus, Eng</p>
 		<div>Contacts & links:</div>
 		<ul>
-			<li>Email</li>
-			<li>GitHub</li>
-			<li>LinkedIn</li>
-			<li>Twitter</li>
-			<li>Facebook</li>
-			<li>Telegram</li>
+			<li>
+				<BaseLink
+					link="mailto:m.navrotskiy@gmail.com"
+					label="m.navrotskiy@gmail.com"
+					icon="fa-regular fa-envelope"
+				/>
+			</li>
+			<li>
+				<BaseLink link="https://github.com/nav-mike" label="nav-mike" icon="fa-brands fa-github" />
+			</li>
+			<li>
+				<BaseLink
+					link="www.linkedin.com/in/mikhail-navrotskii-8857a041"
+					label="Mikhail Navrotskii"
+					icon="fa-brands fa-linkedin"
+				/>
+			</li>
+			<li>
+				<BaseLink
+					link="https://twitter.com/m_navrotskiy"
+					label="@m_navrotskiy"
+					icon="fa-brands fa-twitter"
+				/>
+			</li>
+			<li>
+				<BaseLink
+					link="https://www.facebook.com/mnavrotskiy"
+					label="@mnavrotskiy"
+					icon="fa-brands fa-facebook"
+				/>
+			</li>
+			<li>
+				<div class="flex items-center m-2">
+					<i class="fa-brands fa-telegram m-2" />
+					<span>@navmike</span>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<div>
