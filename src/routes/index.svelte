@@ -5,7 +5,7 @@
 	import Wall from '../components/Wall.svelte';
 </script>
 
-<div class="flex flex-row">
+<div class="flex flex-col md:flex-row">
 	<div class="flex flex-col">
 		<div class="m-5 mt-2">
 			<Wall title="" klasses="flex flex-col justify-center items-center">
@@ -16,8 +16,8 @@
 				/>
 				<h1><i class="fa-regular fa-user" /> Mikhail Navrotskii</h1>
 				<p>
-					<i class="fa-solid fa-laptop-code" /> Backend developer in
-					<a href="https://www.brella.io" target="_blank">brella.io</a>
+					Backend developer in
+					<a class="hover:underline" href="https://www.brella.io" target="_blank">brella.io</a>
 				</p>
 				<p><i class="fa-solid fa-location-dot" /> Living in Espoo, Finland</p>
 				<p><i class="fa-solid fa-language" /> Languages: 🇷🇺 🇬🇧</p>
@@ -72,7 +72,10 @@
 	<div>
 		<!-- Tabs: -->
 		<div class="m-2">
-			<Wall title="My professional skills" klasses="grid gap-4 grid-cols-4">
+			<Wall
+				title="My professional skills"
+				klasses="grid gap-4 grid-cols-2 md:grid-cols-2 lg:grid-cols-6"
+			>
 				<span>
 					<Skill icon="devicon-ruby-plain" name="Ruby" />
 				</span>
