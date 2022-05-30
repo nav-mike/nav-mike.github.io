@@ -18,4 +18,3 @@
 		<h5 class="font-light text-gray-500">{location}</h5>
 	</div>
 </div>
-<hr />
