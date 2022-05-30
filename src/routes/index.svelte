@@ -11,10 +11,13 @@
 			src="https://avatars.githubusercontent.com/u/2811491?v=4"
 			alt="Mikhail Navrotskii"
 		/>
-		<h1>Mikhail Navrotskii</h1>
-		<p>Backend developer in <a href="https://www.brella.io" target="_blank">brella.io</a></p>
-		<p>Living in Espoo, Finland</p>
-		<p>Languages: Rus, Eng</p>
+		<h1><i class="fa-regular fa-user" /> Mikhail Navrotskii</h1>
+		<p>
+			<i class="fa-solid fa-laptop-code" /> Backend developer in
+			<a href="https://www.brella.io" target="_blank">brella.io</a>
+		</p>
+		<p><i class="fa-solid fa-location-dot" /> Living in Espoo, Finland</p>
+		<p><i class="fa-solid fa-language" /> Languages: 🇷🇺 🇬🇧</p>
 		<div>Contacts & links:</div>
 		<ul>
 			<li>
