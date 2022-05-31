@@ -8,16 +8,18 @@
 		"preview": "svelte-kit preview",
 		"prepare": "svelte-kit sync",
 		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+		"deploy": "svelte-kit build && touch build/.nojekyll && npx gh-pages -d build -t true"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-static": "^1.0.0-next.34",
+		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"autoprefixer": "^10.4.7",
 		"eslint": "^8.12.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^4.0.0",
+		"gh-pages": "^4.0.0",
 		"postcss": "^8.4.14",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.0",

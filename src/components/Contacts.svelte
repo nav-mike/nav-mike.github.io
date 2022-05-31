@@ -17,7 +17,7 @@
 		</span>
 		<span>
 			<BaseLink
-				link="www.linkedin.com/in/mikhail-navrotskii-8857a041"
+				link="https://linkedin.com/in/mikhail-navrotskii-8857a041"
 				label="Mikhail Navrotskii"
 				icon="fa-brands fa-linkedin"
 			/>
