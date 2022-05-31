@@ -1,23 +1,27 @@
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
-
-const dev = process.env.NODE_ENV === 'development';
+import importAssets from 'svelte-preprocess-import-assets';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	kit: {
 		adapter: adapter(),
-		paths: {
-			base: dev ? '' : '/nav-mike.github.io'
-		},
 		prerender: {
 			default: true
+		},
+		paths: {
+			base: process.env.NODE_ENV === 'production' ? '/nav-mike.github.io' : '',
+			assets: process.env.NODE_ENV === 'production' ? 'https://nav-mike.github.io' : ''
 		}
 	},
 	preprocess: [
 		preprocess({
-			postcss: true
-		})
+			postcss: true,
+			defaults: {
+				style: 'postcss'
+			}
+		}),
+		importAssets()
 	]
 };
 

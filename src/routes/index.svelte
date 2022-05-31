@@ -7,6 +7,9 @@
 	import Education from '../components/Education.svelte';
 </script>
 
+<svelte:head>
+	<title>Mikhail Navrotskii | Fullstack developer</title>
+</svelte:head>
 <div class="flex flex-col md:flex-row">
 	<div class="flex flex-col">
 		<BasicInfo />
