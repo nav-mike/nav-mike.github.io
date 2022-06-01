@@ -1,5 +1,4 @@
 <script>
-	import Card from '../components/Card.svelte';
 	import Skills from '../components/Skills.svelte';
 	import BasicInfo from '../components/BasicInfo.svelte';
 	import Contacts from '../components/Contacts.svelte';
