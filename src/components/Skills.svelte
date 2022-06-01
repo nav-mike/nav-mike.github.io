@@ -39,6 +39,9 @@
 			<Skill icon="devicon-react-original" name="React Native" />
 		</span>
 		<span>
+			<Skill image="https://stimulus.hotwired.dev/assets/favicon-32x32.png" name="Hotwire" />
+		</span>
+		<span>
 			<Skill icon="devicon-nodejs-plain" name="Node.js" />
 		</span>
 		<span>
