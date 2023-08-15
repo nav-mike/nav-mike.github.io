@@ -1,18 +1,23 @@
 ---
+import BasicInfo from "../components/BasicInfo.astro";
+import Contacts from "../components/Contacts.astro";
+import Education from "../components/Education.astro";
+import Jobs from "../components/Jobs.astro";
+import Skills from "../components/Skills.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Mikhail Navrotskii | Fullstack developer">
   <div class="flex flex-col md:flex-row">
     <div class="flex flex-col">
-      <span>basic info</span>
-      <span>contacts</span>
+      <BasicInfo />
+      <Contacts />
     </div>
 
     <div>
-      <span>skills</span>
-      <span>jobs</span>
-      <span>education</span>
+      <Skills />
+      <Jobs />
+      <Education />
     </div>
   </div>
 </Layout>
