@@ -1,0 +1,15 @@
+---
+interface Props {
+  icon: string;
+  name: string;
+  image?: string;
+}
+
+const { icon, name, image } = Astro.props;
+---
+
+<div class="flex items-center m-2">
+  {image && <img src={image} class="w-4 h-4 m-2" alt={name} />}
+  {!image && <i class={`${icon} colored m-2`} />}
+  <span>{name}</span>
+</div>
