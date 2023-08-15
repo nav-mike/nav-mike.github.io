@@ -1,0 +1,21 @@
+---
+import Skill from "./Skill.astro";
+import Wall from "./Wall.astro";
+---
+
+<div class="m-2">
+  <Wall
+    title="My Professional Skills"
+    styleClasses={[
+      "grid",
+      "gap-4",
+      "grid-cols-2",
+      "md:grod-cols-2",
+      "lg:grid-cols-6",
+    ]}
+  >
+    <span>
+      <Skill icon="devicon-ruby-plain" name="Ruby" />
+    </span>
+  </Wall>
+</div>
