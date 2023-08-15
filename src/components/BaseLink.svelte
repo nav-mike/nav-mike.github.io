@@ -1,6 +1,5 @@
 <script>
   export let link;
-  export let label;
   export let icon;
 
   let hover = "";
@@ -21,5 +20,5 @@
   on:mouseleave={mouseLeaveHandler}
 >
   <i class="{icon} m-2" />
-  <span class={hover}>{label}</span>
+  <span class={hover}><slot /></span>
 </a>

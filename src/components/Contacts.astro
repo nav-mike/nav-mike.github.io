@@ -1,0 +1,51 @@
+---
+import BaseLink from "./BaseLink.svelte";
+import Wall from "./Wall.astro";
+---
+
+<div class="m-5">
+  <Wall title="Contacts & links">
+    <span>
+      <BaseLink
+        link="mailto:m.navrotskiy@gmail.com"
+        icon="fa-regular fa-envelope"
+      >
+        m.navrotskiy@gmail.com
+      </BaseLink>
+    </span>
+
+    <span>
+      <BaseLink
+        link="https://linkedin.com/in/mikhail-navrotskii-8857a041"
+        icon="fa-brands fa-linkedin"
+      >
+        Mikhail Navrotskii
+      </BaseLink>
+    </span>
+
+    <span>
+      <BaseLink
+        link="https://twitter.com/m_navrotskiy"
+        icon="fa-brands fa-twitter"
+      >
+        @m_navrotskiy
+      </BaseLink>
+    </span>
+
+    <span>
+      <BaseLink
+        link="https://www.facebook.com/mnavrotskiy"
+        icon="fa-brands fa-facebook"
+      >
+        @mnavrotskiy
+      </BaseLink>
+    </span>
+
+    <span>
+      <div class="flex items-center m-2">
+        <i class="fa-brands fa-telegram m-2"></i>
+        <span>@navmike</span>
+      </div>
+    </span>
+  </Wall>
+</div>
