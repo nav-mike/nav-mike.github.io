@@ -1,6 +1,7 @@
 <script>
   export let link;
   export let icon;
+  export let blank = false;
 
   let hover = "";
 
@@ -18,6 +19,7 @@
   class="flex items-center m-2"
   on:mouseenter={mouseEnterHandler}
   on:mouseleave={mouseLeaveHandler}
+  target={blank ? "_blank" : ""}
 >
   <i class="{icon} m-2" />
   <span class={hover}><slot /></span>
